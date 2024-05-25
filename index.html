@@ -9,15 +9,18 @@
 </head>
 
 <body>
-  <div class="navbar flex justify-between items-center p-4">
-    <div class="items-center justify-center flex ml-2 md:order-3">
-      <img class="h-6 w-6 mr-2 md:hidden" src="./images/menu.png" alt="menuLogo">
-      <img class="h-4 w-4 ml-2 md:hidden" src="./images/search.png" alt="searchIcon">
-    </div>
-    <div class="logo text-center flex mx-2 md:order-1">
-      <img class="h-7 w-7 ml-2" src="./images/icons8-microsoft-48.png" alt="microsoftLogo">
-      <span class="ml-1 font-semibold text-lg">Microsoft</span>
-      <div class="feature absolute w-fit inset-0 -translate-x-28 bg-gray-200 md:bg-white md:static md:w-auto md:flex md:-translate-x-0 md:mx-8 md:space-x-3">
+  <div class="container mx-auto">
+
+    <div class="navbar flex justify-between items-center p-4">
+      <div class="items-center justify-center flex ml-2 md:order-3">
+        <img class="h-6 w-6 mr-2 md:hidden" src="./images/menu.png" alt="menuLogo">
+        <img class="h-4 w-4 ml-2 md:hidden" src="./images/search.png" alt="searchIcon">
+      </div>
+      <div class="logo text-center flex mx-2 md:order-1">
+        <img class="h-7 w-7 ml-2" src="./images/icons8-microsoft-48.png" alt="microsoftLogo">
+        <span class="ml-1 font-semibold text-lg">Microsoft</span>
+        <div
+          class="feature absolute w-fit inset-0 -translate-x-28 bg-gray-200 md:bg-white md:static md:w-auto md:flex md:-translate-x-0 md:mx-8 md:space-x-3 md:text-sm md:items-center md:cursor-pointer">
           <div class="fitem">Microsoft 365</div>
           <div class="fitem">Teams</div>
           <div class="fitem">Copilot</div>
@@ -26,12 +29,41 @@
           <div class="fitem">Xbox</div>
           <div class="fitem">Support</div>
           <!-- <div class="fitem flex items-center"><span>More</span> <img class="h-3 w-3 ml-2 mt-2" src="./images/icons8-expand-arrow-50.png" alt="expandArrow" ></div> -->
+        </div>
+      </div>
+      <div class="logo text-center flex items-center justify-center md:order-4 md:space-x-8 md:mr-7">
+        <div class="hidden md:flex md:items-center md:justify-center md:space-x-2">
+          <span class="text-sm md:items-center">All Microsoft</span>
+          <img class="h-3 w-3 mt-2" src="./images/icons8-expand-arrow-50.png" alt="expandArrow">
+        </div>
+        <div class="md:flex md:space-x-2 md:items-center">
+          <span class="hidden md:text-sm md:block">Search</span>
+           <img class="h-4 w-4 mr-10 mt-1 hidden md:block md:mr-0" src="./images/search.png" alt="searchIcon">
+        </div>
+        <div class="md:flex md:space-x-2 md:items-center">
+          <span class="hidden md:text-sm md:block">Cart</span>
+          <img class="h-5 w-5 mr-3 md:mr-0" src="./images/shopping-cart.png" alt="cart">
+        </div>
+  
+        <div class="md:flex md:space-x-2 md:items-center">
+          <span class="hidden md:text-sm md:block">Sign In</span>
+          <img class="h-7 w-7 mx-3 md:mx-0" src="./images/user.png" alt="accountLogo">
+        </div>
       </div>
     </div>
-    <div class="logo text-center flex items-center justify-center md:order-4">
-      <img class="h-4 w-4 mr-10 mt-1 hidden md:block" src="./images/search.png" alt="searchIcon">
-      <img class="h-5 w-5 mr-3" src="./images/shopping-cart.png" alt="cart">
-      <img class="h-7 w-7 mx-3" src="./images/user.png" alt="accountLogo">
+  
+    <div class="slider flex flex-col-reverse md:flex-row md:bg-[#e8eff5] shadow-md mx-1 md:mx-0">
+      <div class="left flex flex-col justify-center md:w-1/2 h-1/2 w-full my-auto md:mx-8 mx-1 bg-white py-4 px-1">
+            <div class="my-3 md:mx-12 mx-4"><span class="bg-yellow-400 px-3 py-1 font-semibold">New</span></div>
+            <h2 class="md:mx-12 mx-4 md:text-5xl text-2xl font-semibold md:font-normal">Meet Surface pro</h2>
+            <p class="md:mt-8 mb-2 md:mx-12 mx-4 mt-5 text-sm md:text-lg">This laptop's unrivalled flexibility and AI features like Recall and Cocreator, enable you to do more than you ever imagined.</p>
+            <div class="md:mx-12 mx-4 md:my-4 mt-4 md:mt-4"><button class="bg-[#0067b8] text-white text-sm py-2 px-4 rounded-sm hover:bg-[#004a7f]">Learn More</button>
+            <!-- #0078d4  -->
+            </div>
+      </div>
+      <div >
+        <img class="right h-full" src="./images/laptop.png" alt="laptop1">
+      </div>
     </div>
   </div>
 </body>
